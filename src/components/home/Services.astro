@@ -4,20 +4,25 @@ const services = [
     step: '01',
     name: 'Design',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We strive to create visually stunning and user-friendly websites that leave a lasting impression, tailored to your unique brand identity.',
   },
   {
     step: '02',
     name: 'Develop',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'From concept to launch, we will bring your vision to life with functional and responsive websites that perform flawlessly on all devices.',
   },
   {
     step: '03',
     name: 'Maintain',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      `We're your dedicated partner for the long haul. Our maintenance services ensure your website stays updated, secure, and optimized for peak performance, so you can focus on your business.`,
   },
+  {
+    step: '04',
+    name: "Optimize",
+    description: "Improve your website's speed, search engine ranking, and user experience with our optimization services. We make sure your site not only looks great but also delivers results by attracting and retaining visitors."
+  }
 ];
 ---
 
@@ -28,10 +33,10 @@ const services = [
       <div class="grid gap-8 lg:grid-cols-3">
         {
           services.map((service) => (
-            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-4 rounded-3xl px-6 py-8">
               <p class="text-sm">{service.step}</p>
               <div class="flex flex-col gap-4">
-                <h3 class="text-xl font-medium">{service.name}</h3>
+                <h3 class="text-xl font-medium border-b">{service.name}</h3>
                 <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
                   {service.description}
                 </p>
