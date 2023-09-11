@@ -1,28 +1,11 @@
 ---
 const pricing = [
   {
-    name: 'Premium Subscription',
-    description: 'Elevate your digital presence with our Premium Subscription, perfect for businesses aiming to make a bigger impact online.',
-    periodicity: '/month',
-    price: '$300',
-    action: 'learn more',
-    features: ['Everything included in Base', '+3 more pages'],
-  },
-  {
-    name: 'Base Subscription',
-    description: 'Launch your online presence without breaking the bank. This hassle-free start is $0 down, making it easy to get up and running.',
-    isFlagged: true,
-    periodicity: '/month',
-    price: '$200',
-    action: 'Buy Now',
-    features: ['$0 down', 'Up to 5 pages', 'Unlimited Edits', '24/7 Support', 'Page Maintenance'],
-  },
-  {
     name: 'Enterprise Projects',
     description: `Have a project that doesn't fit the other plans? Let's figure it out.`,
     periodicity: '',
     price: 'Custom Pricing',
-    action: 'Buy Now',
+    action: 'Learn More',
     features: [
       'API Integration',
       'Database Management',
@@ -30,6 +13,23 @@ const pricing = [
       'Consulting'
     ],
   },
+  {
+    name: 'Base Subscription',
+    description: 'Launch your online presence without breaking the bank. This hassle-free start is $0 down, making it easy to get up and running.',
+    isFlagged: true,
+    periodicity: '/month',
+    price: '$200',
+    action: 'Learn More',
+    features: ['$0 down', 'Up to 5 pages', 'Unlimited Edits', '24/7 Support', 'Page Maintenance'],
+  },
+  {
+    name: 'Premium Subscription',
+    description: 'Elevate your digital presence with our Premium Subscription, perfect for businesses aiming to make a bigger impact online.',
+    periodicity: '/month',
+    price: '$300',
+    action: 'Learn More',
+    features: ['Everything included in Base', '+3 more pages'],
+  }
 ];
 ---
 
@@ -72,10 +72,10 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href="/contact"
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
-              Buy now
+              {item.action}
             </a>
           </div>
         ))
